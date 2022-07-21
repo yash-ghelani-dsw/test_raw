@@ -1,0 +1,1628 @@
+
+
+============================== 2022-07-21 06:11:33.802799 | a48051ec-de54-4b47-96a9-2e9824978961 ==============================
+06:11:33.802799 [info ] [MainThread]: Running with dbt=1.1.1
+06:11:33.803857 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'show': False, 'which': 'seed', 'rpc_method': 'seed', 'indirect_selection': 'eager'}
+06:11:33.804805 [debug] [MainThread]: Tracking: tracking
+06:11:33.820045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFF21040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFF21460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFF210A0>]}
+06:11:33.841188 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+06:11:33.842234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFF2AB50>]}
+06:11:34.094770 [debug] [MainThread]: Parsing macros\adapters.sql
+06:11:34.171629 [debug] [MainThread]: Parsing macros\catalog.sql
+06:11:34.188430 [debug] [MainThread]: Parsing macros\relations.sql
+06:11:34.188430 [debug] [MainThread]: Parsing macros\materializations\snapshot_merge.sql
+06:11:34.188430 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+06:11:34.221147 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+06:11:34.236771 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+06:11:34.236771 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+06:11:34.252395 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+06:11:34.268022 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+06:11:34.299270 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+06:11:34.299270 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+06:11:34.314890 [debug] [MainThread]: Parsing macros\etc\statement.sql
+06:11:34.314890 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+06:11:34.314890 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+06:11:34.330513 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+06:11:34.348357 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+06:11:34.348357 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+06:11:34.364001 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+06:11:34.364001 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+06:11:34.395251 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+06:11:34.410876 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+06:11:34.410876 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+06:11:34.426501 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+06:11:34.426501 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+06:11:34.426501 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+06:11:34.426501 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+06:11:34.442125 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+06:11:34.473376 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+06:11:34.473376 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+06:11:34.489001 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+06:11:34.505966 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+06:11:34.505966 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+06:11:34.537970 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+06:11:34.537970 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+06:11:34.537970 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+06:11:34.553774 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+06:11:34.822504 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+06:11:34.847325 [debug] [MainThread]: 1603: static parser failed on orders.sql
+06:11:34.856592 [debug] [MainThread]: 1602: parser fallback to jinja rendering on orders.sql
+06:11:34.860794 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_customers.sql
+06:11:34.862892 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_orders.sql
+06:11:34.862892 [debug] [MainThread]: 1699: static parser successfully parsed staging\stg_payments.sql
+06:11:35.139122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB00969D0>]}
+06:11:35.160528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB00E7D00>]}
+06:11:35.161572 [info ] [MainThread]: Found 5 models, 20 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 3 seed files, 0 sources, 0 exposures, 0 metrics
+06:11:35.161572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFFE5940>]}
+06:11:35.163578 [info ] [MainThread]: 
+06:11:35.165994 [debug] [MainThread]: Acquiring new postgres connection "master"
+06:11:35.168347 [debug] [ThreadPool]: Acquiring new postgres connection "list_dsw_db"
+06:11:35.171416 [debug] [ThreadPool]: Using postgres connection "list_dsw_db"
+06:11:35.171416 [debug] [ThreadPool]: On list_dsw_db: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dsw_db"} */
+
+    select distinct nspname from pg_namespace
+  
+06:11:35.171416 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:11:35.737936 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.57 seconds
+06:11:35.737936 [debug] [ThreadPool]: On list_dsw_db: Close
+06:11:35.756078 [debug] [ThreadPool]: Acquiring new postgres connection "list_dsw_db_public"
+06:11:35.776555 [debug] [ThreadPool]: Using postgres connection "list_dsw_db_public"
+06:11:35.776555 [debug] [ThreadPool]: On list_dsw_db_public: BEGIN
+06:11:35.776555 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:11:36.237973 [debug] [ThreadPool]: SQL status: BEGIN in 0.46 seconds
+06:11:36.237973 [debug] [ThreadPool]: Using postgres connection "list_dsw_db_public"
+06:11:36.237973 [debug] [ThreadPool]: On list_dsw_db_public: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dsw_db_public"} */
+select
+      'dsw_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dsw_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+06:11:36.303160 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.07 seconds
+06:11:36.303160 [debug] [ThreadPool]: On list_dsw_db_public: ROLLBACK
+06:11:36.368412 [debug] [ThreadPool]: On list_dsw_db_public: Close
+06:11:36.374553 [debug] [MainThread]: Using postgres connection "master"
+06:11:36.390280 [debug] [MainThread]: On master: BEGIN
+06:11:36.390280 [debug] [MainThread]: Opening a new connection, currently in state init
+06:11:36.863711 [debug] [MainThread]: SQL status: BEGIN in 0.47 seconds
+06:11:36.863711 [debug] [MainThread]: Using postgres connection "master"
+06:11:36.863711 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+06:11:36.944672 [debug] [MainThread]: SQL status: SELECT 0 in 0.08 seconds
+06:11:36.945684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB00968E0>]}
+06:11:36.945684 [debug] [MainThread]: On master: ROLLBACK
+06:11:36.993037 [debug] [MainThread]: Using postgres connection "master"
+06:11:36.993037 [debug] [MainThread]: On master: BEGIN
+06:11:37.090995 [debug] [MainThread]: SQL status: BEGIN in 0.1 seconds
+06:11:37.090995 [debug] [MainThread]: On master: COMMIT
+06:11:37.090995 [debug] [MainThread]: Using postgres connection "master"
+06:11:37.090995 [debug] [MainThread]: On master: COMMIT
+06:11:37.153790 [debug] [MainThread]: SQL status: COMMIT in 0.06 seconds
+06:11:37.153790 [debug] [MainThread]: On master: Close
+06:11:37.153790 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+06:11:37.153790 [info ] [MainThread]: 
+06:11:37.190838 [debug] [Thread-1  ]: Began running node seed.jaffle_shop.raw_customers
+06:11:37.192310 [debug] [Thread-2  ]: Began running node seed.jaffle_shop.raw_orders
+06:11:37.193329 [info ] [Thread-1  ]: 1 of 3 START seed file public.raw_customers .................................... [RUN]
+06:11:37.194628 [debug] [Thread-3  ]: Began running node seed.jaffle_shop.raw_payments
+06:11:37.195645 [info ] [Thread-2  ]: 2 of 3 START seed file public.raw_orders ....................................... [RUN]
+06:11:37.198380 [debug] [Thread-1  ]: Acquiring new postgres connection "seed.jaffle_shop.raw_customers"
+06:11:37.200045 [info ] [Thread-3  ]: 3 of 3 START seed file public.raw_payments ..................................... [RUN]
+06:11:37.202269 [debug] [Thread-1  ]: Began compiling node seed.jaffle_shop.raw_customers
+06:11:37.205416 [debug] [Thread-2  ]: Acquiring new postgres connection "seed.jaffle_shop.raw_orders"
+06:11:37.207444 [debug] [Thread-1  ]: finished collecting timing info
+06:11:37.210074 [debug] [Thread-3  ]: Acquiring new postgres connection "seed.jaffle_shop.raw_payments"
+06:11:37.211101 [debug] [Thread-2  ]: Began compiling node seed.jaffle_shop.raw_orders
+06:11:37.211101 [debug] [Thread-1  ]: Began executing node seed.jaffle_shop.raw_customers
+06:11:37.214308 [debug] [Thread-3  ]: Began compiling node seed.jaffle_shop.raw_payments
+06:11:37.214452 [debug] [Thread-2  ]: finished collecting timing info
+06:11:37.255928 [debug] [Thread-3  ]: finished collecting timing info
+06:11:37.288842 [debug] [Thread-2  ]: Began executing node seed.jaffle_shop.raw_orders
+06:11:37.292588 [debug] [Thread-3  ]: Began executing node seed.jaffle_shop.raw_payments
+06:11:37.496703 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop.raw_customers"
+06:11:37.496703 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: BEGIN
+06:11:37.504880 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+06:11:37.512287 [debug] [Thread-3  ]: Using postgres connection "seed.jaffle_shop.raw_payments"
+06:11:37.512287 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: BEGIN
+06:11:37.515751 [debug] [Thread-2  ]: Using postgres connection "seed.jaffle_shop.raw_orders"
+06:11:37.515751 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+06:11:37.516903 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: BEGIN
+06:11:37.519254 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+06:11:38.023339 [debug] [Thread-1  ]: SQL status: BEGIN in 0.52 seconds
+06:11:38.023339 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop.raw_customers"
+06:11:38.023339 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_customers"} */
+
+    create table "dsw_db"."public"."raw_customers" ("id" integer,"first_name" text,"last_name" text)
+  
+06:11:38.093626 [debug] [Thread-1  ]: SQL status: CREATE TABLE in 0.07 seconds
+06:11:38.140535 [debug] [Thread-2  ]: SQL status: BEGIN in 0.62 seconds
+06:11:38.157965 [debug] [Thread-2  ]: Using postgres connection "seed.jaffle_shop.raw_orders"
+06:11:38.175810 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_orders"} */
+
+    create table "dsw_db"."public"."raw_orders" ("id" integer,"user_id" integer,"order_date" date,"status" text)
+  
+06:11:38.193873 [debug] [Thread-3  ]: SQL status: BEGIN in 0.68 seconds
+06:11:38.272026 [debug] [Thread-3  ]: Using postgres connection "seed.jaffle_shop.raw_payments"
+06:11:38.290113 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "seed.jaffle_shop.raw_payments"} */
+
+    create table "dsw_db"."public"."raw_payments" ("id" integer,"order_id" integer,"payment_method" text,"amount" integer)
+  
+06:11:38.323902 [debug] [Thread-2  ]: SQL status: CREATE TABLE in 0.09 seconds
+06:11:38.439498 [debug] [Thread-3  ]: SQL status: CREATE TABLE in 0.12 seconds
+06:11:38.681220 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop.raw_customers"
+06:11:38.697266 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: 
+          insert into "dsw_db"."public"."raw_customers" ("id", "first_name", "last_name") values
+          (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%...
+06:11:38.854265 [debug] [Thread-1  ]: SQL status: INSERT 0 100 in 0.08 seconds
+06:11:38.887792 [debug] [Thread-1  ]: Writing runtime SQL for node "seed.jaffle_shop.raw_customers"
+06:11:39.149765 [debug] [Thread-2  ]: Using postgres connection "seed.jaffle_shop.raw_orders"
+06:11:39.181134 [debug] [Thread-3  ]: Using postgres connection "seed.jaffle_shop.raw_payments"
+06:11:39.181134 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: 
+          insert into "dsw_db"."public"."raw_orders" ("id", "user_id", "order_date", "status") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,...
+06:11:39.225609 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: COMMIT
+06:11:39.225609 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: 
+          insert into "dsw_db"."public"."raw_payments" ("id", "order_id", "payment_method", "amount") values
+          (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s),...
+06:11:39.238776 [debug] [Thread-1  ]: Using postgres connection "seed.jaffle_shop.raw_customers"
+06:11:39.243303 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: COMMIT
+06:11:39.305937 [debug] [Thread-1  ]: SQL status: COMMIT in 0.06 seconds
+06:11:39.305937 [debug] [Thread-1  ]: finished collecting timing info
+06:11:39.320056 [debug] [Thread-2  ]: SQL status: INSERT 0 99 in 0.08 seconds
+06:11:39.320056 [debug] [Thread-1  ]: On seed.jaffle_shop.raw_customers: Close
+06:11:39.322328 [debug] [Thread-2  ]: Writing runtime SQL for node "seed.jaffle_shop.raw_orders"
+06:11:39.324826 [debug] [Thread-3  ]: SQL status: INSERT 0 113 in 0.09 seconds
+06:11:39.326083 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB00455B0>]}
+06:11:39.328954 [debug] [Thread-3  ]: Writing runtime SQL for node "seed.jaffle_shop.raw_payments"
+06:11:39.330968 [info ] [Thread-1  ]: 1 of 3 OK loaded seed file public.raw_customers ................................ [[32mINSERT 100[0m in 2.13s]
+06:11:39.338210 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: COMMIT
+06:11:39.343089 [debug] [Thread-2  ]: Using postgres connection "seed.jaffle_shop.raw_orders"
+06:11:39.344121 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: COMMIT
+06:11:39.346404 [debug] [Thread-1  ]: Finished running node seed.jaffle_shop.raw_customers
+06:11:39.356000 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: COMMIT
+06:11:39.358052 [debug] [Thread-3  ]: Using postgres connection "seed.jaffle_shop.raw_payments"
+06:11:39.359059 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: COMMIT
+06:11:39.389247 [debug] [Thread-2  ]: SQL status: COMMIT in 0.04 seconds
+06:11:39.389247 [debug] [Thread-2  ]: finished collecting timing info
+06:11:39.389247 [debug] [Thread-2  ]: On seed.jaffle_shop.raw_orders: Close
+06:11:39.389247 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB015DAF0>]}
+06:11:39.389247 [info ] [Thread-2  ]: 2 of 3 OK loaded seed file public.raw_orders ................................... [[32mINSERT 99[0m in 2.19s]
+06:11:39.403114 [debug] [Thread-2  ]: Finished running node seed.jaffle_shop.raw_orders
+06:11:39.405592 [debug] [Thread-3  ]: SQL status: COMMIT in 0.05 seconds
+06:11:39.421841 [debug] [Thread-3  ]: finished collecting timing info
+06:11:39.423475 [debug] [Thread-3  ]: On seed.jaffle_shop.raw_payments: Close
+06:11:39.426837 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a48051ec-de54-4b47-96a9-2e9824978961', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB015D6D0>]}
+06:11:39.427897 [info ] [Thread-3  ]: 3 of 3 OK loaded seed file public.raw_payments ................................. [[32mINSERT 113[0m in 2.22s]
+06:11:39.431753 [debug] [Thread-3  ]: Finished running node seed.jaffle_shop.raw_payments
+06:11:39.436842 [debug] [MainThread]: Acquiring new postgres connection "master"
+06:11:39.439229 [debug] [MainThread]: Using postgres connection "master"
+06:11:39.439229 [debug] [MainThread]: On master: BEGIN
+06:11:39.439229 [debug] [MainThread]: Opening a new connection, currently in state closed
+06:11:39.856844 [debug] [MainThread]: SQL status: BEGIN in 0.42 seconds
+06:11:39.856844 [debug] [MainThread]: On master: COMMIT
+06:11:39.856844 [debug] [MainThread]: Using postgres connection "master"
+06:11:39.856844 [debug] [MainThread]: On master: COMMIT
+06:11:39.903719 [debug] [MainThread]: SQL status: COMMIT in 0.03 seconds
+06:11:39.903719 [debug] [MainThread]: On master: Close
+06:11:39.919102 [info ] [MainThread]: 
+06:11:39.923321 [info ] [MainThread]: Finished running 3 seeds in 4.76s.
+06:11:39.926863 [debug] [MainThread]: Connection 'master' was properly closed.
+06:11:39.927893 [debug] [MainThread]: Connection 'list_dsw_db' was properly closed.
+06:11:39.927893 [debug] [MainThread]: Connection 'list_dsw_db_public' was properly closed.
+06:11:39.929079 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_customers' was properly closed.
+06:11:39.930145 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_orders' was properly closed.
+06:11:39.930145 [debug] [MainThread]: Connection 'seed.jaffle_shop.raw_payments' was properly closed.
+06:11:39.959108 [info ] [MainThread]: 
+06:11:39.961979 [info ] [MainThread]: [32mCompleted successfully[0m
+06:11:39.966423 [info ] [MainThread]: 
+06:11:39.969030 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+06:11:39.973192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB013D070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EB013D940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000010EAFF2A850>]}
+
+
+============================== 2022-07-21 12:19:43.704685 | b8adb6ac-0e5e-4ccf-a78b-950bdb6ae8e3 ==============================
+12:19:43.704685 [info ] [MainThread]: Running with dbt=1.1.1
+12:19:43.704685 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+12:19:43.704685 [debug] [MainThread]: Tracking: tracking
+12:19:43.720310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F301460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F3010A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F301370>]}
+12:19:43.829725 [debug] [MainThread]: Executing "git --help"
+12:19:43.876559 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+12:19:43.876559 [debug] [MainThread]: STDERR: "b''"
+12:19:43.876559 [debug] [MainThread]: Acquiring new postgres connection "debug"
+12:19:43.876559 [debug] [MainThread]: Using postgres connection "debug"
+12:19:43.876559 [debug] [MainThread]: On debug: select 1 as id
+12:19:43.876559 [debug] [MainThread]: Opening a new connection, currently in state init
+12:19:44.517516 [debug] [MainThread]: SQL status: SELECT 1 in 0.64 seconds
+12:19:44.532882 [debug] [MainThread]: On debug: Close
+12:19:44.532882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F419B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F419A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A59F419190>]}
+12:19:46.580029 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-07-21 12:20:10.731588 | 3ad431c0-2603-400c-a64e-2e8d6c6b1db9 ==============================
+12:20:10.731588 [info ] [MainThread]: Running with dbt=1.1.1
+12:20:10.731588 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+12:20:10.731588 [debug] [MainThread]: Tracking: tracking
+12:20:10.731588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F20A00D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F20A04F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F20A0130>]}
+12:20:10.762800 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+12:20:10.762800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3ad431c0-2603-400c-a64e-2e8d6c6b1db9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F20AFBE0>]}
+12:20:10.825304 [debug] [MainThread]: Parsing macros\adapters.sql
+12:20:10.856588 [debug] [MainThread]: Parsing macros\catalog.sql
+12:20:10.872214 [debug] [MainThread]: Parsing macros\relations.sql
+12:20:10.872214 [debug] [MainThread]: Parsing macros\materializations\snapshot_merge.sql
+12:20:10.872214 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+12:20:10.887839 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+12:20:10.887839 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+12:20:10.887839 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+12:20:10.903464 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+12:20:10.903464 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+12:20:10.919089 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+12:20:10.919089 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\etc\statement.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+12:20:10.934714 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+12:20:10.950338 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+12:20:10.950338 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+12:20:10.950338 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+12:20:10.950338 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+12:20:10.950338 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+12:20:10.965969 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+12:20:10.981589 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+12:20:10.981589 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+12:20:10.997212 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+12:20:11.012836 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+12:20:11.028463 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+12:20:11.028463 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+12:20:11.028463 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+12:20:11.044095 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+12:20:11.044095 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+12:20:11.044095 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+12:20:11.075337 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+12:20:11.075337 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+12:20:11.090962 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+12:20:11.106587 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+12:20:11.106587 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+12:20:11.137838 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+12:20:11.137838 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+12:20:11.137838 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+12:20:11.137838 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+12:20:11.387840 [debug] [MainThread]: 1699: static parser successfully parsed customers.sql
+12:20:11.403466 [debug] [MainThread]: 1603: static parser failed on orders.sql
+12:20:11.403466 [debug] [MainThread]: 1602: parser fallback to jinja rendering on orders.sql
+12:20:11.403466 [debug] [MainThread]: 1699: static parser successfully parsed custom\raw_customers.sql
+12:20:11.403466 [debug] [MainThread]: 1699: static parser successfully parsed custom\raw_orders.sql
+12:20:11.403466 [debug] [MainThread]: 1699: static parser successfully parsed custom\raw_payments.sql
+12:20:11.559720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ad431c0-2603-400c-a64e-2e8d6c6b1db9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F21A4580>]}
+12:20:11.575348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ad431c0-2603-400c-a64e-2e8d6c6b1db9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F21ACB50>]}
+12:20:11.575348 [info ] [MainThread]: Found 5 models, 20 tests, 0 snapshots, 0 analyses, 167 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+12:20:11.575348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ad431c0-2603-400c-a64e-2e8d6c6b1db9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F2194C70>]}
+12:20:11.575348 [info ] [MainThread]: 
+12:20:11.575348 [debug] [MainThread]: Acquiring new postgres connection "master"
+12:20:11.575348 [debug] [ThreadPool]: Acquiring new postgres connection "list_dsw_db_public"
+12:20:11.590969 [debug] [ThreadPool]: Using postgres connection "list_dsw_db_public"
+12:20:11.590969 [debug] [ThreadPool]: On list_dsw_db_public: BEGIN
+12:20:11.590969 [debug] [ThreadPool]: Opening a new connection, currently in state init
+12:20:12.197416 [debug] [ThreadPool]: SQL status: BEGIN in 0.61 seconds
+12:20:12.197416 [debug] [ThreadPool]: Using postgres connection "list_dsw_db_public"
+12:20:12.197416 [debug] [ThreadPool]: On list_dsw_db_public: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "list_dsw_db_public"} */
+select
+      'dsw_db' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dsw_db' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+12:20:12.251059 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.05 seconds
+12:20:12.253913 [debug] [ThreadPool]: On list_dsw_db_public: ROLLBACK
+12:20:12.308573 [debug] [ThreadPool]: On list_dsw_db_public: Close
+12:20:12.318393 [debug] [MainThread]: Using postgres connection "master"
+12:20:12.319383 [debug] [MainThread]: On master: BEGIN
+12:20:12.319383 [debug] [MainThread]: Opening a new connection, currently in state init
+12:20:12.802258 [debug] [MainThread]: SQL status: BEGIN in 0.48 seconds
+12:20:12.817592 [debug] [MainThread]: Using postgres connection "master"
+12:20:12.817592 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+12:20:12.942719 [debug] [MainThread]: SQL status: SELECT 0 in 0.13 seconds
+12:20:12.942719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ad431c0-2603-400c-a64e-2e8d6c6b1db9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F2151E20>]}
+12:20:12.958229 [debug] [MainThread]: On master: ROLLBACK
+12:20:13.021025 [debug] [MainThread]: Using postgres connection "master"
+12:20:13.021025 [debug] [MainThread]: On master: BEGIN
+12:20:13.114757 [debug] [MainThread]: SQL status: BEGIN in 0.09 seconds
+12:20:13.114757 [debug] [MainThread]: On master: COMMIT
+12:20:13.114757 [debug] [MainThread]: Using postgres connection "master"
+12:20:13.114757 [debug] [MainThread]: On master: COMMIT
+12:20:13.161638 [debug] [MainThread]: SQL status: COMMIT in 0.05 seconds
+12:20:13.161638 [debug] [MainThread]: On master: Close
+12:20:13.161638 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+12:20:13.161638 [info ] [MainThread]: 
+12:20:13.176937 [debug] [Thread-1  ]: Began running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+12:20:13.176937 [debug] [Thread-2  ]: Began running node test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5
+12:20:13.176937 [info ] [Thread-1  ]: 1 of 20 START test accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+12:20:13.176937 [debug] [Thread-3  ]: Began running node test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde
+12:20:13.176937 [info ] [Thread-2  ]: 2 of 20 START test accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned  [RUN]
+12:20:13.176937 [debug] [Thread-4  ]: Began running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+12:20:13.176937 [info ] [Thread-3  ]: 3 of 20 START test accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [RUN]
+12:20:13.176937 [debug] [Thread-1  ]: Acquiring new postgres connection "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+12:20:13.176937 [info ] [Thread-4  ]: 4 of 20 START test not_null_customers_customer_id .............................. [RUN]
+12:20:13.176937 [debug] [Thread-2  ]: Acquiring new postgres connection "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"
+12:20:13.176937 [debug] [Thread-1  ]: Began compiling node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+12:20:13.176937 [debug] [Thread-3  ]: Acquiring new postgres connection "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"
+12:20:13.176937 [debug] [Thread-2  ]: Began compiling node test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5
+12:20:13.176937 [debug] [Thread-4  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+12:20:13.176937 [debug] [Thread-1  ]: Compiling test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+12:20:13.176937 [debug] [Thread-3  ]: Began compiling node test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde
+12:20:13.176937 [debug] [Thread-2  ]: Compiling test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5
+12:20:13.176937 [debug] [Thread-4  ]: Began compiling node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+12:20:13.192592 [debug] [Thread-1  ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+12:20:13.192592 [debug] [Thread-3  ]: Compiling test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde
+12:20:13.192592 [debug] [Thread-2  ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"
+12:20:13.192592 [debug] [Thread-4  ]: Compiling test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+12:20:13.192592 [debug] [Thread-3  ]: Writing injected SQL for node "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"
+12:20:13.208238 [debug] [Thread-4  ]: Writing injected SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+12:20:13.208238 [debug] [Thread-4  ]: finished collecting timing info
+12:20:13.208238 [debug] [Thread-4  ]: Began executing node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+12:20:13.239478 [debug] [Thread-4  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+12:20:13.239478 [debug] [Thread-3  ]: finished collecting timing info
+12:20:13.239478 [debug] [Thread-3  ]: Began executing node test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde
+12:20:13.239478 [debug] [Thread-1  ]: finished collecting timing info
+12:20:13.239478 [debug] [Thread-3  ]: Writing runtime SQL for node "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"
+12:20:13.239478 [debug] [Thread-2  ]: finished collecting timing info
+12:20:13.239478 [debug] [Thread-1  ]: Began executing node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+12:20:13.239478 [debug] [Thread-2  ]: Began executing node test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5
+12:20:13.239478 [debug] [Thread-1  ]: Writing runtime SQL for node "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+12:20:13.239478 [debug] [Thread-2  ]: Writing runtime SQL for node "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"
+12:20:13.239478 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+12:20:13.239478 [debug] [Thread-1  ]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: BEGIN
+12:20:13.239478 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+12:20:13.239478 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+12:20:13.239478 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: BEGIN
+12:20:13.239478 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+12:20:13.239478 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"
+12:20:13.239478 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"
+12:20:13.239478 [debug] [Thread-2  ]: On test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5: BEGIN
+12:20:13.239478 [debug] [Thread-3  ]: On test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde: BEGIN
+12:20:13.239478 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+12:20:13.239478 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+12:20:13.786310 [debug] [Thread-1  ]: SQL status: BEGIN in 0.55 seconds
+12:20:13.786310 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"
+12:20:13.801939 [debug] [Thread-1  ]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "dsw_db"."public"."orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','return_pending','returned'
+)
+
+
+
+      
+    ) dbt_internal_test
+12:20:13.817596 [debug] [Thread-2  ]: SQL status: BEGIN in 0.58 seconds
+12:20:13.817596 [debug] [Thread-3  ]: SQL status: BEGIN in 0.58 seconds
+12:20:13.817596 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"
+12:20:13.817596 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"
+12:20:13.817596 [debug] [Thread-2  ]: On test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "dsw_db"."public"."raw_orders"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','return_pending','returned'
+)
+
+
+
+      
+    ) dbt_internal_test
+12:20:13.817596 [debug] [Thread-3  ]: On test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        payment_method as value_field,
+        count(*) as n_records
+
+    from "dsw_db"."public"."raw_payments"
+    group by payment_method
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'credit_card','coupon','bank_transfer','gift_card'
+)
+
+
+
+      
+    ) dbt_internal_test
+12:20:13.833528 [debug] [Thread-4  ]: SQL status: BEGIN in 0.59 seconds
+12:20:13.833528 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"
+12:20:13.833528 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dsw_db"."public"."customers"
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:13.880060 [debug] [Thread-2  ]: SQL status: SELECT 1 in 0.06 seconds
+12:20:13.880060 [debug] [Thread-2  ]: finished collecting timing info
+12:20:13.880060 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 17:     from "dsw_db"."public"."orders"
+                  ^
+
+12:20:13.880060 [debug] [Thread-3  ]: SQL status: SELECT 1 in 0.06 seconds
+12:20:13.880060 [debug] [Thread-2  ]: On test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5: ROLLBACK
+12:20:13.880060 [debug] [Thread-1  ]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: ROLLBACK
+12:20:13.895691 [debug] [Thread-3  ]: finished collecting timing info
+12:20:13.895691 [debug] [Thread-4  ]: Postgres adapter: Postgres error: relation "public.customers" does not exist
+LINE 14: from "dsw_db"."public"."customers"
+              ^
+
+12:20:13.895691 [debug] [Thread-3  ]: On test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde: ROLLBACK
+12:20:13.895691 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: ROLLBACK
+12:20:13.958498 [debug] [Thread-2  ]: On test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5: Close
+12:20:13.958498 [info ] [Thread-2  ]: 2 of 20 PASS accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned  [[32mPASS[0m in 0.78s]
+12:20:13.958498 [debug] [Thread-1  ]: finished collecting timing info
+12:20:13.958498 [debug] [Thread-1  ]: On test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3: Close
+12:20:13.958498 [debug] [Thread-1  ]: Database Error in test accepted_values_orders_status__placed__shipped__completed__return_pending__returned (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 17:     from "dsw_db"."public"."orders"
+                    ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\accepted_values_orders_1ce6ab157c285f7cd2ac656013faf758.sql
+12:20:13.958498 [error] [Thread-1  ]: 1 of 20 ERROR accepted_values_orders_status__placed__shipped__completed__return_pending__returned  [[31mERROR[0m in 0.78s]
+12:20:13.958498 [debug] [Thread-2  ]: Finished running node test.jaffle_shop.accepted_values_raw_orders_status__placed__shipped__completed__return_pending__returned.5672a0feb5
+12:20:13.958498 [debug] [Thread-2  ]: Began running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+12:20:13.973860 [info ] [Thread-2  ]: 5 of 20 START test not_null_orders_amount ...................................... [RUN]
+12:20:13.973860 [debug] [Thread-1  ]: Finished running node test.jaffle_shop.accepted_values_orders_status__placed__shipped__completed__return_pending__returned.be6b5b5ec3
+12:20:13.973860 [debug] [Thread-4  ]: finished collecting timing info
+12:20:13.973860 [debug] [Thread-1  ]: Began running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+12:20:13.973860 [debug] [Thread-2  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+12:20:13.973860 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d: Close
+12:20:13.973860 [info ] [Thread-1  ]: 6 of 20 START test not_null_orders_bank_transfer_amount ........................ [RUN]
+12:20:13.973860 [debug] [Thread-2  ]: Began compiling node test.jaffle_shop.not_null_orders_amount.106140f9fd
+12:20:13.989442 [debug] [Thread-4  ]: Database Error in test not_null_customers_customer_id (models\schema.yml)
+  relation "public.customers" does not exist
+  LINE 14: from "dsw_db"."public"."customers"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_customers_customer_id.sql
+12:20:13.989442 [debug] [Thread-1  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+12:20:13.989442 [debug] [Thread-2  ]: Compiling test.jaffle_shop.not_null_orders_amount.106140f9fd
+12:20:13.989442 [error] [Thread-4  ]: 4 of 20 ERROR not_null_customers_customer_id ................................... [[31mERROR[0m in 0.81s]
+12:20:13.989442 [debug] [Thread-1  ]: Began compiling node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+12:20:14.005122 [debug] [Thread-2  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+12:20:14.005122 [debug] [Thread-3  ]: On test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde: Close
+12:20:14.005122 [debug] [Thread-1  ]: Compiling test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+12:20:14.005122 [debug] [Thread-4  ]: Finished running node test.jaffle_shop.not_null_customers_customer_id.5c9bf9911d
+12:20:14.005122 [info ] [Thread-3  ]: 3 of 20 PASS accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card  [[32mPASS[0m in 0.83s]
+12:20:14.005122 [debug] [Thread-1  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+12:20:14.020724 [debug] [Thread-4  ]: Began running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+12:20:14.020724 [debug] [Thread-2  ]: finished collecting timing info
+12:20:14.020724 [info ] [Thread-4  ]: 7 of 20 START test not_null_orders_coupon_amount ............................... [RUN]
+12:20:14.020724 [debug] [Thread-2  ]: Began executing node test.jaffle_shop.not_null_orders_amount.106140f9fd
+12:20:14.020724 [debug] [Thread-3  ]: Finished running node test.jaffle_shop.accepted_values_raw_payments_payment_method__credit_card__coupon__bank_transfer__gift_card.382402ebde
+12:20:14.020724 [debug] [Thread-1  ]: finished collecting timing info
+12:20:14.020724 [debug] [Thread-2  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+12:20:14.020724 [debug] [Thread-4  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+12:20:14.020724 [debug] [Thread-3  ]: Began running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+12:20:14.020724 [debug] [Thread-1  ]: Began executing node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+12:20:14.020724 [debug] [Thread-4  ]: Began compiling node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+12:20:14.020724 [info ] [Thread-3  ]: 8 of 20 START test not_null_orders_credit_card_amount .......................... [RUN]
+12:20:14.020724 [debug] [Thread-1  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+12:20:14.020724 [debug] [Thread-4  ]: Compiling test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+12:20:14.020724 [debug] [Thread-3  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+12:20:14.036345 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+12:20:14.036345 [debug] [Thread-3  ]: Began compiling node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+12:20:14.036345 [debug] [Thread-4  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+12:20:14.036345 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: BEGIN
+12:20:14.036345 [debug] [Thread-3  ]: Compiling test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+12:20:14.036345 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+12:20:14.036345 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+12:20:14.036345 [debug] [Thread-3  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+12:20:14.036345 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: BEGIN
+12:20:14.036345 [debug] [Thread-4  ]: finished collecting timing info
+12:20:14.036345 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+12:20:14.036345 [debug] [Thread-4  ]: Began executing node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+12:20:14.036345 [debug] [Thread-4  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+12:20:14.036345 [debug] [Thread-3  ]: finished collecting timing info
+12:20:14.036345 [debug] [Thread-3  ]: Began executing node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+12:20:14.051939 [debug] [Thread-3  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+12:20:14.051939 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+12:20:14.051939 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: BEGIN
+12:20:14.051939 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+12:20:14.051939 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+12:20:14.051939 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: BEGIN
+12:20:14.051939 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+12:20:14.489440 [debug] [Thread-2  ]: SQL status: BEGIN in 0.45 seconds
+12:20:14.489440 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_orders_amount.106140f9fd"
+12:20:14.489440 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_amount.106140f9fd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select amount
+from "dsw_db"."public"."orders"
+where amount is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:14.551938 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:14.551938 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: ROLLBACK
+12:20:14.567564 [debug] [Thread-1  ]: SQL status: BEGIN in 0.53 seconds
+12:20:14.567564 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"
+12:20:14.567564 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select bank_transfer_amount
+from "dsw_db"."public"."orders"
+where bank_transfer_amount is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:14.567564 [debug] [Thread-3  ]: SQL status: BEGIN in 0.52 seconds
+12:20:14.567564 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"
+12:20:14.567564 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select credit_card_amount
+from "dsw_db"."public"."orders"
+where credit_card_amount is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:14.598881 [debug] [Thread-4  ]: SQL status: BEGIN in 0.55 seconds
+12:20:14.598881 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"
+12:20:14.598881 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select coupon_amount
+from "dsw_db"."public"."orders"
+where coupon_amount is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:14.645808 [debug] [Thread-2  ]: finished collecting timing info
+12:20:14.645808 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_amount.106140f9fd: Close
+12:20:14.661341 [debug] [Thread-3  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:14.661341 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:14.661341 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: ROLLBACK
+12:20:14.661341 [debug] [Thread-2  ]: Database Error in test not_null_orders_amount (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_amount.sql
+12:20:14.661341 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: ROLLBACK
+12:20:14.661341 [debug] [Thread-4  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:14.661341 [error] [Thread-2  ]: 5 of 20 ERROR not_null_orders_amount ........................................... [[31mERROR[0m in 0.69s]
+12:20:14.661341 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: ROLLBACK
+12:20:14.661341 [debug] [Thread-2  ]: Finished running node test.jaffle_shop.not_null_orders_amount.106140f9fd
+12:20:14.676960 [debug] [Thread-2  ]: Began running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+12:20:14.676960 [info ] [Thread-2  ]: 9 of 20 START test not_null_orders_customer_id ................................. [RUN]
+12:20:14.676960 [debug] [Thread-2  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+12:20:14.676960 [debug] [Thread-2  ]: Began compiling node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+12:20:14.676960 [debug] [Thread-2  ]: Compiling test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+12:20:14.692619 [debug] [Thread-2  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+12:20:14.692619 [debug] [Thread-2  ]: finished collecting timing info
+12:20:14.692619 [debug] [Thread-2  ]: Began executing node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+12:20:14.692619 [debug] [Thread-2  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+12:20:14.692619 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+12:20:14.692619 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: BEGIN
+12:20:14.692619 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+12:20:14.817890 [debug] [Thread-1  ]: finished collecting timing info
+12:20:14.817890 [debug] [Thread-3  ]: finished collecting timing info
+12:20:14.817890 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49: Close
+12:20:14.817890 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59: Close
+12:20:14.833187 [debug] [Thread-3  ]: Database Error in test not_null_orders_credit_card_amount (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_credit_card_amount.sql
+12:20:14.833187 [error] [Thread-3  ]: 8 of 20 ERROR not_null_orders_credit_card_amount ............................... [[31mERROR[0m in 0.81s]
+12:20:14.833187 [debug] [Thread-1  ]: Database Error in test not_null_orders_bank_transfer_amount (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_bank_transfer_amount.sql
+12:20:14.833187 [error] [Thread-1  ]: 6 of 20 ERROR not_null_orders_bank_transfer_amount ............................. [[31mERROR[0m in 0.84s]
+12:20:14.833187 [debug] [Thread-3  ]: Finished running node test.jaffle_shop.not_null_orders_credit_card_amount.d3ca593b59
+12:20:14.833187 [debug] [Thread-3  ]: Began running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+12:20:14.833187 [info ] [Thread-3  ]: 10 of 20 START test not_null_orders_gift_card_amount ........................... [RUN]
+12:20:14.833187 [debug] [Thread-1  ]: Finished running node test.jaffle_shop.not_null_orders_bank_transfer_amount.7743500c49
+12:20:14.833187 [debug] [Thread-1  ]: Began running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+12:20:14.833187 [info ] [Thread-1  ]: 11 of 20 START test not_null_orders_order_id ................................... [RUN]
+12:20:14.833187 [debug] [Thread-3  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+12:20:14.833187 [debug] [Thread-4  ]: finished collecting timing info
+12:20:14.833187 [debug] [Thread-1  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+12:20:14.833187 [debug] [Thread-3  ]: Began compiling node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+12:20:14.833187 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625: Close
+12:20:14.833187 [debug] [Thread-1  ]: Began compiling node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+12:20:14.833187 [debug] [Thread-3  ]: Compiling test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+12:20:14.833187 [debug] [Thread-1  ]: Compiling test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+12:20:14.833187 [debug] [Thread-3  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+12:20:14.833187 [debug] [Thread-4  ]: Database Error in test not_null_orders_coupon_amount (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_coupon_amount.sql
+12:20:14.848815 [debug] [Thread-1  ]: Writing injected SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+12:20:14.848815 [error] [Thread-4  ]: 7 of 20 ERROR not_null_orders_coupon_amount .................................... [[31mERROR[0m in 0.83s]
+12:20:14.848815 [debug] [Thread-3  ]: finished collecting timing info
+12:20:14.848815 [debug] [Thread-3  ]: Began executing node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+12:20:14.848815 [debug] [Thread-3  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+12:20:14.848815 [debug] [Thread-1  ]: finished collecting timing info
+12:20:14.848815 [debug] [Thread-1  ]: Began executing node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+12:20:14.848815 [debug] [Thread-1  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+12:20:14.848815 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+12:20:14.848815 [debug] [Thread-4  ]: Finished running node test.jaffle_shop.not_null_orders_coupon_amount.ab90c90625
+12:20:14.848815 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: BEGIN
+12:20:14.848815 [debug] [Thread-4  ]: Began running node test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a
+12:20:14.848815 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+12:20:14.848815 [info ] [Thread-4  ]: 12 of 20 START test not_null_raw_customers_customer_id ......................... [RUN]
+12:20:14.848815 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+12:20:14.848815 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: BEGIN
+12:20:14.848815 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+12:20:14.864471 [debug] [Thread-4  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"
+12:20:14.864471 [debug] [Thread-4  ]: Began compiling node test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a
+12:20:14.864471 [debug] [Thread-4  ]: Compiling test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a
+12:20:14.864471 [debug] [Thread-4  ]: Writing injected SQL for node "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"
+12:20:14.864471 [debug] [Thread-4  ]: finished collecting timing info
+12:20:14.864471 [debug] [Thread-4  ]: Began executing node test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a
+12:20:14.864471 [debug] [Thread-4  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"
+12:20:14.864471 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"
+12:20:14.864471 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a: BEGIN
+12:20:14.864471 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+12:20:15.318127 [debug] [Thread-2  ]: SQL status: BEGIN in 0.63 seconds
+12:20:15.318127 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"
+12:20:15.318127 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_customer_id.c5f02694af"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dsw_db"."public"."orders"
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:15.364995 [debug] [Thread-1  ]: SQL status: BEGIN in 0.52 seconds
+12:20:15.364995 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"
+12:20:15.364995 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_order_id.cf6c17daed"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from "dsw_db"."public"."orders"
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:15.364995 [debug] [Thread-4  ]: SQL status: BEGIN in 0.5 seconds
+12:20:15.380321 [debug] [Thread-2  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:15.380321 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: ROLLBACK
+12:20:15.364995 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"
+12:20:15.380321 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select customer_id
+from "dsw_db"."public"."raw_customers"
+where customer_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:15.380321 [debug] [Thread-3  ]: SQL status: BEGIN in 0.53 seconds
+12:20:15.380321 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"
+12:20:15.380321 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select gift_card_amount
+from "dsw_db"."public"."orders"
+where gift_card_amount is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:15.443184 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:15.443184 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: ROLLBACK
+12:20:15.458811 [debug] [Thread-2  ]: finished collecting timing info
+12:20:15.458811 [debug] [Thread-4  ]: Postgres adapter: Postgres error: column "customer_id" does not exist
+LINE 13: select customer_id
+                ^
+
+12:20:15.458811 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_orders_customer_id.c5f02694af: Close
+12:20:15.458811 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a: ROLLBACK
+12:20:15.458811 [debug] [Thread-2  ]: Database Error in test not_null_orders_customer_id (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_customer_id.sql
+12:20:15.458811 [error] [Thread-2  ]: 9 of 20 ERROR not_null_orders_customer_id ...................................... [[31mERROR[0m in 0.78s]
+12:20:15.474040 [debug] [Thread-2  ]: Finished running node test.jaffle_shop.not_null_orders_customer_id.c5f02694af
+12:20:15.474040 [debug] [Thread-2  ]: Began running node test.jaffle_shop.not_null_raw_orders_order_id.e74425a338
+12:20:15.474040 [info ] [Thread-2  ]: 13 of 20 START test not_null_raw_orders_order_id ............................... [RUN]
+12:20:15.474040 [debug] [Thread-2  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"
+12:20:15.474040 [debug] [Thread-2  ]: Began compiling node test.jaffle_shop.not_null_raw_orders_order_id.e74425a338
+12:20:15.474040 [debug] [Thread-2  ]: Compiling test.jaffle_shop.not_null_raw_orders_order_id.e74425a338
+12:20:15.474040 [debug] [Thread-2  ]: Writing injected SQL for node "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"
+12:20:15.474040 [debug] [Thread-2  ]: finished collecting timing info
+12:20:15.474040 [debug] [Thread-2  ]: Began executing node test.jaffle_shop.not_null_raw_orders_order_id.e74425a338
+12:20:15.474040 [debug] [Thread-2  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"
+12:20:15.474040 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"
+12:20:15.474040 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_raw_orders_order_id.e74425a338: BEGIN
+12:20:15.474040 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+12:20:15.489989 [debug] [Thread-3  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 14: from "dsw_db"."public"."orders"
+              ^
+
+12:20:15.489989 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: ROLLBACK
+12:20:15.520251 [debug] [Thread-4  ]: finished collecting timing info
+12:20:15.520251 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a: Close
+12:20:15.520251 [debug] [Thread-4  ]: Database Error in test not_null_raw_customers_customer_id (models\custom\schema.yml)
+  column "customer_id" does not exist
+  LINE 13: select customer_id
+                  ^
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_customers_customer_id.sql
+12:20:15.520251 [error] [Thread-4  ]: 12 of 20 ERROR not_null_raw_customers_customer_id .............................. [[31mERROR[0m in 0.67s]
+12:20:15.520251 [debug] [Thread-1  ]: finished collecting timing info
+12:20:15.520251 [debug] [Thread-1  ]: On test.jaffle_shop.not_null_orders_order_id.cf6c17daed: Close
+12:20:15.520251 [debug] [Thread-4  ]: Finished running node test.jaffle_shop.not_null_raw_customers_customer_id.ad2454198a
+12:20:15.520251 [debug] [Thread-1  ]: Database Error in test not_null_orders_order_id (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_order_id.sql
+12:20:15.520251 [debug] [Thread-4  ]: Began running node test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7
+12:20:15.520251 [error] [Thread-1  ]: 11 of 20 ERROR not_null_orders_order_id ........................................ [[31mERROR[0m in 0.69s]
+12:20:15.520251 [info ] [Thread-4  ]: 14 of 20 START test not_null_raw_payments_payment_id ........................... [RUN]
+12:20:15.535623 [debug] [Thread-1  ]: Finished running node test.jaffle_shop.not_null_orders_order_id.cf6c17daed
+12:20:15.535623 [debug] [Thread-1  ]: Began running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+12:20:15.535623 [debug] [Thread-4  ]: Acquiring new postgres connection "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"
+12:20:15.535623 [info ] [Thread-1  ]: 15 of 20 START test relationships_orders_customer_id__customer_id__ref_customers_  [RUN]
+12:20:15.535623 [debug] [Thread-4  ]: Began compiling node test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7
+12:20:15.535623 [debug] [Thread-4  ]: Compiling test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7
+12:20:15.535623 [debug] [Thread-4  ]: Writing injected SQL for node "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"
+12:20:15.535623 [debug] [Thread-1  ]: Acquiring new postgres connection "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+12:20:15.535623 [debug] [Thread-1  ]: Began compiling node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+12:20:15.535623 [debug] [Thread-1  ]: Compiling test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+12:20:15.551249 [debug] [Thread-1  ]: Writing injected SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+12:20:15.551249 [debug] [Thread-4  ]: finished collecting timing info
+12:20:15.551249 [debug] [Thread-4  ]: Began executing node test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7
+12:20:15.551249 [debug] [Thread-4  ]: Writing runtime SQL for node "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"
+12:20:15.551249 [debug] [Thread-1  ]: finished collecting timing info
+12:20:15.551249 [debug] [Thread-1  ]: Began executing node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+12:20:15.551249 [debug] [Thread-1  ]: Writing runtime SQL for node "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+12:20:15.566873 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"
+12:20:15.566873 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7: BEGIN
+12:20:15.566873 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+12:20:15.566873 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+12:20:15.566873 [debug] [Thread-1  ]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: BEGIN
+12:20:15.566873 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+12:20:15.582542 [debug] [Thread-3  ]: finished collecting timing info
+12:20:15.582542 [debug] [Thread-3  ]: On test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a: Close
+12:20:15.582542 [debug] [Thread-3  ]: Database Error in test not_null_orders_gift_card_amount (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 14: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_gift_card_amount.sql
+12:20:15.582542 [error] [Thread-3  ]: 10 of 20 ERROR not_null_orders_gift_card_amount ................................ [[31mERROR[0m in 0.75s]
+12:20:15.582542 [debug] [Thread-3  ]: Finished running node test.jaffle_shop.not_null_orders_gift_card_amount.413a0d2d7a
+12:20:15.582542 [debug] [Thread-3  ]: Began running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+12:20:15.582542 [info ] [Thread-3  ]: 16 of 20 START test unique_customers_customer_id ............................... [RUN]
+12:20:15.582542 [debug] [Thread-3  ]: Acquiring new postgres connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+12:20:15.582542 [debug] [Thread-3  ]: Began compiling node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+12:20:15.582542 [debug] [Thread-3  ]: Compiling test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+12:20:15.598129 [debug] [Thread-3  ]: Writing injected SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+12:20:15.598129 [debug] [Thread-3  ]: finished collecting timing info
+12:20:15.598129 [debug] [Thread-3  ]: Began executing node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+12:20:15.598129 [debug] [Thread-3  ]: Writing runtime SQL for node "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+12:20:15.598129 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+12:20:15.598129 [debug] [Thread-3  ]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: BEGIN
+12:20:15.598129 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+12:20:16.082890 [debug] [Thread-1  ]: SQL status: BEGIN in 0.52 seconds
+12:20:16.082890 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"
+12:20:16.082890 [debug] [Thread-1  ]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from "dsw_db"."public"."orders"
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from "dsw_db"."public"."customers"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.082890 [debug] [Thread-4  ]: SQL status: BEGIN in 0.52 seconds
+12:20:16.082890 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"
+12:20:16.082890 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select payment_id
+from "dsw_db"."public"."raw_payments"
+where payment_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.129706 [debug] [Thread-2  ]: SQL status: BEGIN in 0.66 seconds
+12:20:16.145031 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"
+12:20:16.145031 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_raw_orders_order_id.e74425a338: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.not_null_raw_orders_order_id.e74425a338"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select order_id
+from "dsw_db"."public"."raw_orders"
+where order_id is null
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.145031 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 13:     from "dsw_db"."public"."orders"
+                  ^
+
+12:20:16.145031 [debug] [Thread-1  ]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: ROLLBACK
+12:20:16.145031 [debug] [Thread-4  ]: Postgres adapter: Postgres error: column "payment_id" does not exist
+LINE 13: select payment_id
+                ^
+
+12:20:16.145031 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7: ROLLBACK
+12:20:16.207862 [debug] [Thread-1  ]: finished collecting timing info
+12:20:16.207862 [debug] [Thread-1  ]: On test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2: Close
+12:20:16.207862 [debug] [Thread-1  ]: Database Error in test relationships_orders_customer_id__customer_id__ref_customers_ (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 13:     from "dsw_db"."public"."orders"
+                    ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\relationships_orders_customer_id__customer_id__ref_customers_.sql
+12:20:16.207862 [error] [Thread-1  ]: 15 of 20 ERROR relationships_orders_customer_id__customer_id__ref_customers_ ... [[31mERROR[0m in 0.67s]
+12:20:16.207862 [debug] [Thread-1  ]: Finished running node test.jaffle_shop.relationships_orders_customer_id__customer_id__ref_customers_.c6ec7f58f2
+12:20:16.207862 [debug] [Thread-1  ]: Began running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+12:20:16.207862 [info ] [Thread-1  ]: 17 of 20 START test unique_orders_order_id ..................................... [RUN]
+12:20:16.207862 [debug] [Thread-3  ]: SQL status: BEGIN in 0.61 seconds
+12:20:16.207862 [debug] [Thread-1  ]: Acquiring new postgres connection "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+12:20:16.207862 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"
+12:20:16.207862 [debug] [Thread-1  ]: Began compiling node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+12:20:16.207862 [debug] [Thread-2  ]: Postgres adapter: Postgres error: column "order_id" does not exist
+LINE 13: select order_id
+                ^
+HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+
+12:20:16.207862 [debug] [Thread-3  ]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dsw_db"."public"."customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.207862 [debug] [Thread-1  ]: Compiling test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+12:20:16.207862 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_raw_orders_order_id.e74425a338: ROLLBACK
+12:20:16.207862 [debug] [Thread-1  ]: Writing injected SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+12:20:16.207862 [debug] [Thread-1  ]: finished collecting timing info
+12:20:16.223123 [debug] [Thread-1  ]: Began executing node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+12:20:16.223123 [debug] [Thread-1  ]: Writing runtime SQL for node "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+12:20:16.223123 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+12:20:16.223123 [debug] [Thread-1  ]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: BEGIN
+12:20:16.223123 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+12:20:16.239109 [debug] [Thread-4  ]: finished collecting timing info
+12:20:16.239109 [debug] [Thread-4  ]: On test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7: Close
+12:20:16.239109 [debug] [Thread-4  ]: Database Error in test not_null_raw_payments_payment_id (models\custom\schema.yml)
+  column "payment_id" does not exist
+  LINE 13: select payment_id
+                  ^
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_payments_payment_id.sql
+12:20:16.239109 [error] [Thread-4  ]: 14 of 20 ERROR not_null_raw_payments_payment_id ................................ [[31mERROR[0m in 0.70s]
+12:20:16.239109 [debug] [Thread-4  ]: Finished running node test.jaffle_shop.not_null_raw_payments_payment_id.86160951e7
+12:20:16.239109 [debug] [Thread-4  ]: Began running node test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17
+12:20:16.239109 [info ] [Thread-4  ]: 18 of 20 START test unique_raw_customers_customer_id ........................... [RUN]
+12:20:16.239109 [debug] [Thread-4  ]: Acquiring new postgres connection "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"
+12:20:16.239109 [debug] [Thread-4  ]: Began compiling node test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17
+12:20:16.239109 [debug] [Thread-4  ]: Compiling test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17
+12:20:16.239109 [debug] [Thread-4  ]: Writing injected SQL for node "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"
+12:20:16.239109 [debug] [Thread-4  ]: finished collecting timing info
+12:20:16.239109 [debug] [Thread-4  ]: Began executing node test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17
+12:20:16.254407 [debug] [Thread-4  ]: Writing runtime SQL for node "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"
+12:20:16.254407 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"
+12:20:16.254407 [debug] [Thread-4  ]: On test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17: BEGIN
+12:20:16.254407 [debug] [Thread-4  ]: Opening a new connection, currently in state closed
+12:20:16.285945 [debug] [Thread-2  ]: finished collecting timing info
+12:20:16.285945 [debug] [Thread-3  ]: Postgres adapter: Postgres error: relation "public.customers" does not exist
+LINE 15: from "dsw_db"."public"."customers"
+              ^
+
+12:20:16.285945 [debug] [Thread-2  ]: On test.jaffle_shop.not_null_raw_orders_order_id.e74425a338: Close
+12:20:16.285945 [debug] [Thread-3  ]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: ROLLBACK
+12:20:16.285945 [debug] [Thread-2  ]: Database Error in test not_null_raw_orders_order_id (models\custom\schema.yml)
+  column "order_id" does not exist
+  LINE 13: select order_id
+                  ^
+  HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_orders_order_id.sql
+12:20:16.285945 [error] [Thread-2  ]: 13 of 20 ERROR not_null_raw_orders_order_id .................................... [[31mERROR[0m in 0.81s]
+12:20:16.285945 [debug] [Thread-2  ]: Finished running node test.jaffle_shop.not_null_raw_orders_order_id.e74425a338
+12:20:16.285945 [debug] [Thread-2  ]: Began running node test.jaffle_shop.unique_raw_orders_order_id.dd9c335233
+12:20:16.285945 [info ] [Thread-2  ]: 19 of 20 START test unique_raw_orders_order_id ................................. [RUN]
+12:20:16.285945 [debug] [Thread-2  ]: Acquiring new postgres connection "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"
+12:20:16.285945 [debug] [Thread-2  ]: Began compiling node test.jaffle_shop.unique_raw_orders_order_id.dd9c335233
+12:20:16.285945 [debug] [Thread-2  ]: Compiling test.jaffle_shop.unique_raw_orders_order_id.dd9c335233
+12:20:16.301253 [debug] [Thread-2  ]: Writing injected SQL for node "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"
+12:20:16.301253 [debug] [Thread-2  ]: finished collecting timing info
+12:20:16.301253 [debug] [Thread-2  ]: Began executing node test.jaffle_shop.unique_raw_orders_order_id.dd9c335233
+12:20:16.301253 [debug] [Thread-2  ]: Writing runtime SQL for node "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"
+12:20:16.301253 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"
+12:20:16.301253 [debug] [Thread-2  ]: On test.jaffle_shop.unique_raw_orders_order_id.dd9c335233: BEGIN
+12:20:16.301253 [debug] [Thread-2  ]: Opening a new connection, currently in state closed
+12:20:16.348132 [debug] [Thread-3  ]: finished collecting timing info
+12:20:16.348132 [debug] [Thread-3  ]: On test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1: Close
+12:20:16.363752 [debug] [Thread-3  ]: Database Error in test unique_customers_customer_id (models\schema.yml)
+  relation "public.customers" does not exist
+  LINE 15: from "dsw_db"."public"."customers"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\unique_customers_customer_id.sql
+12:20:16.363752 [error] [Thread-3  ]: 16 of 20 ERROR unique_customers_customer_id .................................... [[31mERROR[0m in 0.78s]
+12:20:16.363752 [debug] [Thread-3  ]: Finished running node test.jaffle_shop.unique_customers_customer_id.c5af1ff4b1
+12:20:16.363752 [debug] [Thread-3  ]: Began running node test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1
+12:20:16.363752 [info ] [Thread-3  ]: 20 of 20 START test unique_raw_payments_payment_id ............................. [RUN]
+12:20:16.363752 [debug] [Thread-3  ]: Acquiring new postgres connection "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"
+12:20:16.363752 [debug] [Thread-3  ]: Began compiling node test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1
+12:20:16.363752 [debug] [Thread-3  ]: Compiling test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1
+12:20:16.363752 [debug] [Thread-3  ]: Writing injected SQL for node "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"
+12:20:16.363752 [debug] [Thread-3  ]: finished collecting timing info
+12:20:16.363752 [debug] [Thread-3  ]: Began executing node test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1
+12:20:16.363752 [debug] [Thread-3  ]: Writing runtime SQL for node "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"
+12:20:16.363752 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"
+12:20:16.363752 [debug] [Thread-3  ]: On test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1: BEGIN
+12:20:16.363752 [debug] [Thread-3  ]: Opening a new connection, currently in state closed
+12:20:16.864078 [debug] [Thread-4  ]: SQL status: BEGIN in 0.61 seconds
+12:20:16.864078 [debug] [Thread-4  ]: Using postgres connection "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"
+12:20:16.864078 [debug] [Thread-4  ]: On test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from "dsw_db"."public"."raw_customers"
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.895332 [debug] [Thread-1  ]: SQL status: BEGIN in 0.67 seconds
+12:20:16.895332 [debug] [Thread-1  ]: Using postgres connection "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"
+12:20:16.910636 [debug] [Thread-1  ]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_orders_order_id.fed79b3a6e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dsw_db"."public"."orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.926582 [debug] [Thread-2  ]: SQL status: BEGIN in 0.63 seconds
+12:20:16.926582 [debug] [Thread-2  ]: Using postgres connection "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"
+12:20:16.926582 [debug] [Thread-2  ]: On test.jaffle_shop.unique_raw_orders_order_id.dd9c335233: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_raw_orders_order_id.dd9c335233"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from "dsw_db"."public"."raw_orders"
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+12:20:16.941948 [debug] [Thread-4  ]: Postgres adapter: Postgres error: column "customer_id" does not exist
+LINE 12:     customer_id as unique_field,
+             ^
+
+12:20:16.941948 [debug] [Thread-4  ]: On test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17: ROLLBACK
+12:20:16.973520 [debug] [Thread-1  ]: Postgres adapter: Postgres error: relation "public.orders" does not exist
+LINE 15: from "dsw_db"."public"."orders"
+              ^
+
+12:20:16.973520 [debug] [Thread-1  ]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: ROLLBACK
+12:20:17.004743 [debug] [Thread-4  ]: finished collecting timing info
+12:20:17.020009 [debug] [Thread-2  ]: Postgres adapter: Postgres error: column "order_id" does not exist
+LINE 12:     order_id as unique_field,
+             ^
+HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+
+12:20:17.020009 [debug] [Thread-3  ]: SQL status: BEGIN in 0.66 seconds
+12:20:17.020009 [debug] [Thread-4  ]: On test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17: Close
+12:20:17.020009 [debug] [Thread-2  ]: On test.jaffle_shop.unique_raw_orders_order_id.dd9c335233: ROLLBACK
+12:20:17.020009 [debug] [Thread-3  ]: Using postgres connection "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"
+12:20:17.020009 [debug] [Thread-4  ]: Database Error in test unique_raw_customers_customer_id (models\custom\schema.yml)
+  column "customer_id" does not exist
+  LINE 12:     customer_id as unique_field,
+               ^
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_customers_customer_id.sql
+12:20:17.020009 [debug] [Thread-3  ]: On test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1: /* {"app": "dbt", "dbt_version": "1.1.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    payment_id as unique_field,
+    count(*) as n_records
+
+from "dsw_db"."public"."raw_payments"
+where payment_id is not null
+group by payment_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+12:20:17.020009 [error] [Thread-4  ]: 18 of 20 ERROR unique_raw_customers_customer_id ................................ [[31mERROR[0m in 0.78s]
+12:20:17.020009 [debug] [Thread-4  ]: Finished running node test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17
+12:20:17.051540 [debug] [Thread-1  ]: finished collecting timing info
+12:20:17.051540 [debug] [Thread-1  ]: On test.jaffle_shop.unique_orders_order_id.fed79b3a6e: Close
+12:20:17.051540 [debug] [Thread-1  ]: Database Error in test unique_orders_order_id (models\schema.yml)
+  relation "public.orders" does not exist
+  LINE 15: from "dsw_db"."public"."orders"
+                ^
+  compiled SQL at target\run\jaffle_shop\models\schema.yml\unique_orders_order_id.sql
+12:20:17.051540 [error] [Thread-1  ]: 17 of 20 ERROR unique_orders_order_id .......................................... [[31mERROR[0m in 0.84s]
+12:20:17.051540 [debug] [Thread-1  ]: Finished running node test.jaffle_shop.unique_orders_order_id.fed79b3a6e
+12:20:17.113751 [debug] [Thread-2  ]: finished collecting timing info
+12:20:17.113751 [debug] [Thread-2  ]: On test.jaffle_shop.unique_raw_orders_order_id.dd9c335233: Close
+12:20:17.113751 [debug] [Thread-3  ]: Postgres adapter: Postgres error: column "payment_id" does not exist
+LINE 12:     payment_id as unique_field,
+             ^
+
+12:20:17.113751 [debug] [Thread-3  ]: On test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1: ROLLBACK
+12:20:17.113751 [debug] [Thread-2  ]: Database Error in test unique_raw_orders_order_id (models\custom\schema.yml)
+  column "order_id" does not exist
+  LINE 12:     order_id as unique_field,
+               ^
+  HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_orders_order_id.sql
+12:20:17.113751 [error] [Thread-2  ]: 19 of 20 ERROR unique_raw_orders_order_id ...................................... [[31mERROR[0m in 0.83s]
+12:20:17.113751 [debug] [Thread-2  ]: Finished running node test.jaffle_shop.unique_raw_orders_order_id.dd9c335233
+12:20:17.176646 [debug] [Thread-3  ]: finished collecting timing info
+12:20:17.176646 [debug] [Thread-3  ]: On test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1: Close
+12:20:17.176646 [debug] [Thread-3  ]: Database Error in test unique_raw_payments_payment_id (models\custom\schema.yml)
+  column "payment_id" does not exist
+  LINE 12:     payment_id as unique_field,
+               ^
+  compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_payments_payment_id.sql
+12:20:17.176646 [error] [Thread-3  ]: 20 of 20 ERROR unique_raw_payments_payment_id .................................. [[31mERROR[0m in 0.81s]
+12:20:17.176646 [debug] [Thread-3  ]: Finished running node test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1
+12:20:17.176646 [debug] [MainThread]: Acquiring new postgres connection "master"
+12:20:17.176646 [debug] [MainThread]: Using postgres connection "master"
+12:20:17.176646 [debug] [MainThread]: On master: BEGIN
+12:20:17.176646 [debug] [MainThread]: Opening a new connection, currently in state closed
+12:20:17.817213 [debug] [MainThread]: SQL status: BEGIN in 0.64 seconds
+12:20:17.817213 [debug] [MainThread]: On master: COMMIT
+12:20:17.817213 [debug] [MainThread]: Using postgres connection "master"
+12:20:17.817213 [debug] [MainThread]: On master: COMMIT
+12:20:17.864082 [debug] [MainThread]: SQL status: COMMIT in 0.05 seconds
+12:20:17.864082 [debug] [MainThread]: On master: Close
+12:20:17.864082 [info ] [MainThread]: 
+12:20:17.864082 [info ] [MainThread]: Finished running 20 tests in 6.29s.
+12:20:17.879395 [debug] [MainThread]: Connection 'master' was properly closed.
+12:20:17.879395 [debug] [MainThread]: Connection 'list_dsw_db_public' was properly closed.
+12:20:17.879395 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_orders_order_id.fed79b3a6e' was properly closed.
+12:20:17.879395 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_raw_orders_order_id.dd9c335233' was properly closed.
+12:20:17.879395 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_raw_payments_payment_id.27c95761d1' was properly closed.
+12:20:17.879395 [debug] [MainThread]: Connection 'test.jaffle_shop.unique_raw_customers_customer_id.4be8a71a17' was properly closed.
+12:20:17.879395 [info ] [MainThread]: 
+12:20:17.879395 [info ] [MainThread]: [31mCompleted with 18 errors and 0 warnings:[0m
+12:20:17.879395 [info ] [MainThread]: 
+12:20:17.879395 [error] [MainThread]: [33mDatabase Error in test accepted_values_orders_status__placed__shipped__completed__return_pending__returned (models\schema.yml)[0m
+12:20:17.879395 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.879395 [error] [MainThread]:   LINE 17:     from "dsw_db"."public"."orders"
+12:20:17.879395 [error] [MainThread]:                     ^
+12:20:17.879395 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\accepted_values_orders_1ce6ab157c285f7cd2ac656013faf758.sql
+12:20:17.879395 [info ] [MainThread]: 
+12:20:17.879395 [error] [MainThread]: [33mDatabase Error in test not_null_customers_customer_id (models\schema.yml)[0m
+12:20:17.879395 [error] [MainThread]:   relation "public.customers" does not exist
+12:20:17.894999 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."customers"
+12:20:17.894999 [error] [MainThread]:                 ^
+12:20:17.894999 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_customers_customer_id.sql
+12:20:17.894999 [info ] [MainThread]: 
+12:20:17.894999 [error] [MainThread]: [33mDatabase Error in test not_null_orders_amount (models\schema.yml)[0m
+12:20:17.894999 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.894999 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.894999 [error] [MainThread]:                 ^
+12:20:17.894999 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_amount.sql
+12:20:17.894999 [info ] [MainThread]: 
+12:20:17.894999 [error] [MainThread]: [33mDatabase Error in test not_null_orders_credit_card_amount (models\schema.yml)[0m
+12:20:17.894999 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.894999 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.894999 [error] [MainThread]:                 ^
+12:20:17.894999 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_credit_card_amount.sql
+12:20:17.894999 [info ] [MainThread]: 
+12:20:17.894999 [error] [MainThread]: [33mDatabase Error in test not_null_orders_bank_transfer_amount (models\schema.yml)[0m
+12:20:17.894999 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.894999 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.894999 [error] [MainThread]:                 ^
+12:20:17.894999 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_bank_transfer_amount.sql
+12:20:17.894999 [info ] [MainThread]: 
+12:20:17.894999 [error] [MainThread]: [33mDatabase Error in test not_null_orders_coupon_amount (models\schema.yml)[0m
+12:20:17.894999 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.894999 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.894999 [error] [MainThread]:                 ^
+12:20:17.894999 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_coupon_amount.sql
+12:20:17.910626 [info ] [MainThread]: 
+12:20:17.910626 [error] [MainThread]: [33mDatabase Error in test not_null_orders_customer_id (models\schema.yml)[0m
+12:20:17.910626 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.910626 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.910626 [error] [MainThread]:                 ^
+12:20:17.910626 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_customer_id.sql
+12:20:17.910626 [info ] [MainThread]: 
+12:20:17.910626 [error] [MainThread]: [33mDatabase Error in test not_null_raw_customers_customer_id (models\custom\schema.yml)[0m
+12:20:17.910626 [error] [MainThread]:   column "customer_id" does not exist
+12:20:17.910626 [error] [MainThread]:   LINE 13: select customer_id
+12:20:17.910626 [error] [MainThread]:                   ^
+12:20:17.910626 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_customers_customer_id.sql
+12:20:17.910626 [info ] [MainThread]: 
+12:20:17.910626 [error] [MainThread]: [33mDatabase Error in test not_null_orders_order_id (models\schema.yml)[0m
+12:20:17.910626 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.910626 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.910626 [error] [MainThread]:                 ^
+12:20:17.910626 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_order_id.sql
+12:20:17.910626 [info ] [MainThread]: 
+12:20:17.910626 [error] [MainThread]: [33mDatabase Error in test not_null_orders_gift_card_amount (models\schema.yml)[0m
+12:20:17.910626 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.910626 [error] [MainThread]:   LINE 14: from "dsw_db"."public"."orders"
+12:20:17.926250 [error] [MainThread]:                 ^
+12:20:17.926250 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\not_null_orders_gift_card_amount.sql
+12:20:17.926250 [info ] [MainThread]: 
+12:20:17.926250 [error] [MainThread]: [33mDatabase Error in test relationships_orders_customer_id__customer_id__ref_customers_ (models\schema.yml)[0m
+12:20:17.926250 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.926250 [error] [MainThread]:   LINE 13:     from "dsw_db"."public"."orders"
+12:20:17.926250 [error] [MainThread]:                     ^
+12:20:17.926250 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\relationships_orders_customer_id__customer_id__ref_customers_.sql
+12:20:17.926250 [info ] [MainThread]: 
+12:20:17.926250 [error] [MainThread]: [33mDatabase Error in test not_null_raw_payments_payment_id (models\custom\schema.yml)[0m
+12:20:17.926250 [error] [MainThread]:   column "payment_id" does not exist
+12:20:17.926250 [error] [MainThread]:   LINE 13: select payment_id
+12:20:17.926250 [error] [MainThread]:                   ^
+12:20:17.926250 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_payments_payment_id.sql
+12:20:17.926250 [info ] [MainThread]: 
+12:20:17.926250 [error] [MainThread]: [33mDatabase Error in test not_null_raw_orders_order_id (models\custom\schema.yml)[0m
+12:20:17.926250 [error] [MainThread]:   column "order_id" does not exist
+12:20:17.926250 [error] [MainThread]:   LINE 13: select order_id
+12:20:17.926250 [error] [MainThread]:                   ^
+12:20:17.926250 [error] [MainThread]:   HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+12:20:17.941874 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\not_null_raw_orders_order_id.sql
+12:20:17.941874 [info ] [MainThread]: 
+12:20:17.941874 [error] [MainThread]: [33mDatabase Error in test unique_customers_customer_id (models\schema.yml)[0m
+12:20:17.941874 [error] [MainThread]:   relation "public.customers" does not exist
+12:20:17.941874 [error] [MainThread]:   LINE 15: from "dsw_db"."public"."customers"
+12:20:17.941874 [error] [MainThread]:                 ^
+12:20:17.941874 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\unique_customers_customer_id.sql
+12:20:17.941874 [info ] [MainThread]: 
+12:20:17.941874 [error] [MainThread]: [33mDatabase Error in test unique_raw_customers_customer_id (models\custom\schema.yml)[0m
+12:20:17.941874 [error] [MainThread]:   column "customer_id" does not exist
+12:20:17.941874 [error] [MainThread]:   LINE 12:     customer_id as unique_field,
+12:20:17.941874 [error] [MainThread]:                ^
+12:20:17.941874 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_customers_customer_id.sql
+12:20:17.941874 [info ] [MainThread]: 
+12:20:17.941874 [error] [MainThread]: [33mDatabase Error in test unique_orders_order_id (models\schema.yml)[0m
+12:20:17.941874 [error] [MainThread]:   relation "public.orders" does not exist
+12:20:17.941874 [error] [MainThread]:   LINE 15: from "dsw_db"."public"."orders"
+12:20:17.941874 [error] [MainThread]:                 ^
+12:20:17.941874 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\schema.yml\unique_orders_order_id.sql
+12:20:17.941874 [info ] [MainThread]: 
+12:20:17.941874 [error] [MainThread]: [33mDatabase Error in test unique_raw_orders_order_id (models\custom\schema.yml)[0m
+12:20:17.941874 [error] [MainThread]:   column "order_id" does not exist
+12:20:17.941874 [error] [MainThread]:   LINE 12:     order_id as unique_field,
+12:20:17.941874 [error] [MainThread]:                ^
+12:20:17.941874 [error] [MainThread]:   HINT:  Perhaps you meant to reference the column "raw_orders.user_id".
+12:20:17.941874 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_orders_order_id.sql
+12:20:17.941874 [info ] [MainThread]: 
+12:20:17.957500 [error] [MainThread]: [33mDatabase Error in test unique_raw_payments_payment_id (models\custom\schema.yml)[0m
+12:20:17.957500 [error] [MainThread]:   column "payment_id" does not exist
+12:20:17.957500 [error] [MainThread]:   LINE 12:     payment_id as unique_field,
+12:20:17.957500 [error] [MainThread]:                ^
+12:20:17.957500 [error] [MainThread]:   compiled SQL at target\run\jaffle_shop\models\custom\schema.yml\unique_raw_payments_payment_id.sql
+12:20:17.957500 [info ] [MainThread]: 
+12:20:17.957500 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=18 SKIP=0 TOTAL=20
+12:20:17.957500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F24663D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F21F77F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000146F22BF610>]}
